@@ -7,7 +7,7 @@ from .serializers import PersonalRecordSerializer
 
 class PersonalRecordList(generics.ListCreateAPIView):
     """ 
-    List personal records or create a comment if logged in
+    List personal records or create one if logged in
     """
     serializer_class = PersonalRecordSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]

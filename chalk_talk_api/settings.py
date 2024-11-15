@@ -63,7 +63,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = ['8000-sophietiger-chalktalkap-fmr83iq5ivp.ws.codeinstitute-ide.net', "localhost",
-    "127.0.0.1", "chalk-talk-api.herokuapp.com"]
+    "127.0.0.1", 'chalk-talk-api-7f804e82f4b9.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
     "https://8000-sophietiger-chalktalkap-fmr83iq5ivp.ws.codeinstitute-ide.net"

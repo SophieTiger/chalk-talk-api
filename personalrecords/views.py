@@ -11,7 +11,6 @@ class PersonalRecordList(generics.ListCreateAPIView):
     """
     serializer_class = PersonalRecordSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    queryset = PersonalRecord.objects.all().order_by('-date_achieved')
     filter_backends = [
         DjangoFilterBackend, 
         filters.SearchFilter, 
@@ -20,6 +19,12 @@ class PersonalRecordList(generics.ListCreateAPIView):
     filterset_fields = ['exercise', 'date_achieved']
     search_fields = ['exercise', 'notes']
     ordering_fields = ['date_achieved', 'weight', 'reps']
+
+    def get_queryset(self):
+        owner_id = self.request.query_params.get('owner', None)
+        if owner_id:
+            return PersonalRecord.objects.filter(owner_id=owner_id).order_by('-date_achieved')
+        return PersonalRecord.objects.filter(owner=self.request.user).order_by('-date_achieved')
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)

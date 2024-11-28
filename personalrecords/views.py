@@ -24,7 +24,10 @@ class PersonalRecordList(generics.ListCreateAPIView):
         owner_id = self.request.query_params.get('owner', None)
         if owner_id:
             return PersonalRecord.objects.filter(owner_id=owner_id).order_by('-date_achieved')
-        return PersonalRecord.objects.filter(owner=self.request.user).order_by('-date_achieved')
+        elif self.request.user.is_authenticated:
+            return PersonalRecord.objects.filter(owner=self.request.user).order_by('-date_achieved')
+        else:
+            return PersonalRecord.objects.all().order_by('-date_achieved')
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)

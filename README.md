@@ -65,50 +65,113 @@ Build an intuitive and responsive frontend using React to provide a seamless use
 Integrate key features such as user profiles, posts, comments, likes, personal records, and weight calulation.
 
 ### Timeline
-- Iteration 1: Project Setup and Initial Development
+- Iteration 1: Backend setup and initial development
 
-  - Set up backend and frontend repositories.
+  - Set up backend repository.
   - Configure Django Rest Framework for the backend.
-  - Initialize React project for the frontend.
   - Set up initial project structure and environment configurations.
 
-- Iteration 2: User Authentication and Profile Management
+- Iteration 2: Finish the backend
 
   - Implement user registration, login, and logout functionality.
   - Develop user profile creation and editing features.
   - Ensure secure password handling and authentication processes.
-
-- Iteration 3: Core Features Development
-
   - Develop the functionality for creating, editing, and deleting posts.
   - Implement comments and likes features for posts.
   - Develop personal records features, including creation and management.
 
-- Iteration 4: Frontend Integration and Styling
+- Iteration 3: Backend Bugs solving
+  - Going through the backend to solve any bugs and make sure deployment is ok with final settings.
+
+- Iteration 4: Front-end setup
 
   - Integrate backend API with the frontend.
   - Develop responsive and user-friendly UI components.
   - Apply consistent styling using CSS modules or a CSS framework.
 
-- Iteration 5: Testing and Debugging
+- Iteration 5: Implementing features
 
-  - Conduct thorough testing of all features.
-  - Fix any bugs or issues identified during testing.
+  - Develop features for the frontend to retrieve data from backend: Profile, Personal Records, Posts, Comments, Likes  
   - Perform user acceptance testing (UAT) to ensure the platform meets user needs.
 
-- Iteration 6: Deployment and Documentation
+- Iteration 6: General testing, bug solving, documentation and final steps
 
-  - Deploy the backend API to a cloud service (e.g., Heroku).
-  - Deploy the frontend application to a hosting service (e.g., Heroku).
+  - Conduct Testing and documentation of all features for backend and frontend.
+  - Fix any bugs or issues identified during testing.
+  - Going through the frontend to solve any bugs and make sure deployment is ok with final settings.
+  - Final deploy of the backend API to a cloud service (e.g., Heroku).
+  - Final deploy of the frontend application to a hosting service (e.g., Heroku).
   - Write comprehensive documentation, including setup instructions, API documentation, and user guides.
 
 ## Data Models
-### 1. Profiles Model
-### 2. Posts Model
-### 3. Comments Model
+The Chalk Talk backend project is organized into several key models, each representing different aspects of the Chalk Talk platform. Below is an overview of the primary data models used in the project:
+
+### 1. Profile Model
+**Profile:** Stores user-specific information such as username, password, profile image, bio, name and crossfit_experience.
+
+**Fields:**
+
+- owner: ForeignKey to the User model
+- created_at: DateTimeField
+- updated_at: DateTimeField
+- name: CharField
+- bio: TextField
+- image: ImageField
+- crossfit_experience: CharField
+
+### 2. Post Model
+**Post:** Represents user-generated content, including fields for the title, content, image, creation date, and owner.
+
+**Fields:**
+
+- owner: ForeignKey to the User model
+- created_at: DateTimeField
+- updated_at: DateTimeField
+- title: CharField
+- content: TextField
+- image: ImageField
+- image_filter: CharField
+
+### 3. Comment Model
+**Comment:** Allows users to comment on posts, with fields for the content, creation date, post it belongs to, and owner.
+
+**Fields:**
+
+- owner: ForeignKey to the User model
+- post: ForeignKey
+- created_at: DateTimeField
+- updated_at: DateTimeField
+- content: TextField
+
 ### 4. Likes Model
+**Like:** Tracks which users have liked a particular post.
+
+**Fields:**
+
+- owner: ForeignKey to the User model
+- post: ForeignKey
+- created_at: DateTimeField
+
 ### 5. Follower Model
-### 6. Personal Records Model
+**Follower:** Manages follower-following relationships between users.
+
+**Fields:**
+
+- owner: ForeignKey to the User model
+- followed: ForeignKey
+- created_at: DateTimeField
+
+### 6. Personal Record Model
+**PersonalRecord:** Represents user-generated content, including fields for owner, exercise, weight, reps, date_achieved and notes.
+
+**Fields:**
+
+- owner: ForeignKey to the User model
+- exercise: CharField
+- weight: DecimalField
+- reps: IntegerField
+- date_achieved: DateTimeField
+- notes: TextField
 
 ## API Endpoints
 ### Example Requests and Responses

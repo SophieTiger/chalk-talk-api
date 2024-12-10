@@ -174,6 +174,10 @@ The Chalk Talk backend project is organized into several key models, each repres
 - notes: TextField
 
 ## API Endpoints
+The Chalk Talk backend provides a RESTful API to interact with the various models. Below is a list of the primary API endpoints for each model, including their respective HTTP methods and descriptions.
+![API endpoints image 1](/documentation/api_endpoints_1.png)
+![API endpoints image 2](/documentation/api_endpoints_2.png)
+
 ### Example Requests and Responses
 
 ## Frameworks, Libraries, and Dependencies

@@ -176,8 +176,48 @@ The Chalk Talk backend project is organized into several key models, each repres
 ## API Endpoints
 The Chalk Talk backend provides a RESTful API to interact with the various models. Below is a list of the primary API endpoints for each model, including their respective HTTP methods and descriptions. It covers all the major functionalities such as user authentication, profiles, posts, comments, likes, followers and personal records.
 
-![API endpoints image 1](/documentation/api_endpoints_1.png)
-![API endpoints image 2](/documentation/api_endpoints_2.png)
+| Endpoint | HTTP Method | CRUD Operation | View Type | Description |
+|----------|-------------|----------------|-----------|-------------|
+| **Authentication Endpoints** | | | | |
+| /dj-rest-auth/login/ | POST | Create | Auth | Log in a user and obtain authentication tokens. |
+| /dj-rest-auth/logout/ | POST | Delete | Auth | Log out a user and invalidate their authentication tokens. |
+| /dj-rest-auth/registration/ | POST | Create | Auth | Register a new user. |
+| **Profile Endpoints** | | | | |
+| /profiles/ | GET | Read | List | Retrieve a list of profiles. |
+| | POST | Create | Create | Create a new profile (admin only). |
+| /profiles/<id>/ | GET | Read | Detail | Retrieve a specific profile by ID. |
+| | PUT | Update | Update | Update a specific profile by ID. |
+| | PATCH | Update | Partial Update | Partially update a specific profile by ID. |
+| | DELETE | Delete | Delete | Delete a specific profile by ID (admin only). |
+| **Post Endpoints** | | | | |
+| /posts/ | GET | Read | List | Retrieve a list of posts. |
+| | POST | Create | Create | Create a new post. |
+| /posts/<id>/ | GET | Read | Detail | Retrieve a specific post by ID. |
+| | PUT | Update | Update | Update a specific post by ID. |
+| | PATCH | Update | Partial Update | Partially update a specific post by ID. |
+| | DELETE | Delete | Delete | Delete a specific post by ID. |
+| **Comment Endpoints** | | | | |
+| /comments/ | GET | Read | List | Retrieve a list of comments. |
+| | POST | Create | Create | Create a new comment. |
+| /comments/<id>/ | GET | Read | Detail | Retrieve a specific comment by ID. |
+| | PUT | Update | Update | Update a specific comment by ID. |
+| | PATCH | Update | Partial Update | Partially update a specific comment by ID. |
+| | DELETE | Delete | Delete | Delete a specific comment by ID. |
+| **Like Endpoints** | | | | |
+| /likes/ | GET | Read | List | Retrieve a list of likes. |
+| | POST | Create | Create | Create a new like. |
+| /likes/<id>/ | DELETE | Delete | Delete | Delete a specific like by ID. |
+| **Follower Endpoints** | | | | |
+| /followers/ | GET | Read | List | Retrieve a list of followers. |
+| | POST | Create | Create | Follow a user. |
+| /followers/<id>/ | DELETE | Delete | Delete | Unfollow a user by ID. |
+| **PersonalRecords Endpoints** | | | | |
+| /personalrecords/ | GET | Read | List | Retrieve a list of personal records. |
+| | POST | Create | Create | Create a new personal record. |
+| /personalrecords/<id>/ | GET | Read | Detail | Retrieve a specific personal record by ID. |
+| | PUT | Update | Update | Update a specific personal record by ID. |
+| | PATCH | Update | Partial Update | Partially update a specific personal record by ID. |
+| | DELETE | Delete | Delete | Delete a specific personal record by ID. |
 
 ## Frameworks, Libraries, and Dependencies
 The Chalk Talk project leverages a variety of frameworks, libraries, and dependencies to ensure robust functionality and performance. Below is a detailed list of the key components used:

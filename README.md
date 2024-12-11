@@ -365,13 +365,64 @@ The application is configured to upload media files directly to Cloudinary, wher
   - Use Django’s storage backend for Cloudinary to handle media uploads.
 
 ## Deployment Steps
+- **Clone the Repository:** Clone the GitHub repository to your local machine or open it in Gitpod for development.
+
+- **Configure Environment Variables:** Set up the necessary environment variables in your local .env file or in the Heroku dashboard. These include database URL, Cloudinary API keys, and other sensitive information.
+
+- **Install Dependencies:** Install the required dependencies using `pip install -r requirements.txt`.
+
+- **Run Migrations:** Apply database migrations using python manage.py migrate to set up the PostgreSQL database schema.
+
+- **Test the Application:** Run the application locally or in Gitpod to ensure it works as expected.
+
+- **Deploy to Heroku:** 
+  - Push the changes to the GitHub repository, which triggers the continuous deployment to Heroku.
+  - Ensure that the Heroku app is properly configured with the necessary environment variables and add-ons.
+
+- **Manage Media Files:** Configure Cloudinary in the Django settings and ensure that media files are uploaded and managed correctly.
 
 ## Cloning and Forking
 ### Cloning the Repository
+**Local Setup:**
+
+- Clone the repository: GitHub repository.
+  - `git clone https://github.com/SophieTiger/chalk-talk-api.git`
+  - Navigate into the project directory: `cd chalk-talk-api`
+  - Install dependencies: `pip install -r requirements.txt`
+  - Set up local environment variables in a `.env` file.
+  - Run migrations: `python manage.py makemigrations` and `python manage.py migrate`
+  - Start the development server: `python3 manage.py runserver`
+
 ### Forking the Repository
+**For Contributions:**
+- Fork the repository on [GitHub repository](https://github.com/SophieTiger/chalk-talk-api).
+- Clone your forked repository to your local machine.
+- Follow the local setup steps as above.
+- Make changes and push them back to your fork.
+- Create a pull request from your fork back to the original repo.
+
+By following these steps and utilizing the aforementioned platforms, the deployment and management of the Chalk Talk DRF API application are streamlined and efficient, ensuring a robust and scalable application.
+
+
+## Future Features
+In future iterations of this project, it would be beneficial to implement the following features:
+- **Profile deletion:** This feature would enhance user autonomy, giving them the ability to manage their presence on the platform more effectively.
+- **Programs:** Add programs for Personal training, Bootcamps and Nutrition Coaching to the app according to business needs.
+- **Bookings:** Add booking functionality for programs.
+- **Notifications:** To let users know when interaction was made to their content, such as likes and comments.
+- **Search field for personal records:** To allow users with many PR's to search their records.
 
 ## Credits
 ### Code
+The following blogs/tutorials complemented my learning for this project:
+
+- [Django Documentation](https://www.djangoproject.com/)
+- Django REST Framework
+
+Code Institute Moments Walkthrough
+
+Setting up basic Django Project with Cloudinary
+
 ### Media
 
 ## Acknowledgements

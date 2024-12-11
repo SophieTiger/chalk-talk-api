@@ -179,42 +179,42 @@ The Chalk Talk backend provides a RESTful API to interact with the various model
 | Endpoint | HTTP Method | CRUD Operation | View Type | Description |
 |----------|-------------|----------------|-----------|-------------|
 | **Authentication Endpoints** | | | | |
-| /dj-rest-auth/login/ | POST | Create | Auth | Log in a user and obtain authentication tokens. |
-| /dj-rest-auth/logout/ | POST | Delete | Auth | Log out a user and invalidate their authentication tokens. |
-| /dj-rest-auth/registration/ | POST | Create | Auth | Register a new user. |
+| `/dj-rest-auth/login/` | POST | Create | Auth | Log in a user and obtain authentication tokens. |
+| `/dj-rest-auth/logout/` | POST | Delete | Auth | Log out a user and invalidate their authentication tokens. |
+| `/dj-rest-auth/registration/` | POST | Create | Auth | Register a new user. |
 | **Profile Endpoints** | | | | |
-| /profiles/ | GET | Read | List | Retrieve a list of profiles. |
+| `/profiles/` | GET | Read | List | Retrieve a list of profiles. |
 | | POST | Create | Create | Create a new profile (admin only). |
-| /profiles/<id>/ | GET | Read | Detail | Retrieve a specific profile by ID. |
+| `/profiles/<id>/` | GET | Read | Detail | Retrieve a specific profile by ID. |
 | | PUT | Update | Update | Update a specific profile by ID. |
 | | PATCH | Update | Partial Update | Partially update a specific profile by ID. |
 | | DELETE | Delete | Delete | Delete a specific profile by ID (admin only). |
 | **Post Endpoints** | | | | |
-| /posts/ | GET | Read | List | Retrieve a list of posts. |
+| `/posts/` | GET | Read | List | Retrieve a list of posts. |
 | | POST | Create | Create | Create a new post. |
-| /posts/<id>/ | GET | Read | Detail | Retrieve a specific post by ID. |
+| `/posts/<id>/` | GET | Read | Detail | Retrieve a specific post by ID. |
 | | PUT | Update | Update | Update a specific post by ID. |
 | | PATCH | Update | Partial Update | Partially update a specific post by ID. |
 | | DELETE | Delete | Delete | Delete a specific post by ID. |
 | **Comment Endpoints** | | | | |
-| /comments/ | GET | Read | List | Retrieve a list of comments. |
+| `/comments/` | GET | Read | List | Retrieve a list of comments. |
 | | POST | Create | Create | Create a new comment. |
-| /comments/<id>/ | GET | Read | Detail | Retrieve a specific comment by ID. |
+| `/comments/<id>/` | GET | Read | Detail | Retrieve a specific comment by ID. |
 | | PUT | Update | Update | Update a specific comment by ID. |
 | | PATCH | Update | Partial Update | Partially update a specific comment by ID. |
 | | DELETE | Delete | Delete | Delete a specific comment by ID. |
 | **Like Endpoints** | | | | |
-| /likes/ | GET | Read | List | Retrieve a list of likes. |
+| `/likes/` | GET | Read | List | Retrieve a list of likes. |
 | | POST | Create | Create | Create a new like. |
-| /likes/<id>/ | DELETE | Delete | Delete | Delete a specific like by ID. |
+| `/likes/<id>/` | DELETE | Delete | Delete | Delete a specific like by ID. |
 | **Follower Endpoints** | | | | |
-| /followers/ | GET | Read | List | Retrieve a list of followers. |
+| `/followers/` | GET | Read | List | Retrieve a list of followers. |
 | | POST | Create | Create | Follow a user. |
-| /followers/<id>/ | DELETE | Delete | Delete | Unfollow a user by ID. |
+| `/followers/<id>/` | DELETE | Delete | Delete | Unfollow a user by ID. |
 | **PersonalRecords Endpoints** | | | | |
-| /personalrecords/ | GET | Read | List | Retrieve a list of personal records. |
+| `/personalrecords/` | GET | Read | List | Retrieve a list of personal records. |
 | | POST | Create | Create | Create a new personal record. |
-| /personalrecords/<id>/ | GET | Read | Detail | Retrieve a specific personal record by ID. |
+| `/personalrecords/<id>/` | GET | Read | Detail | Retrieve a specific personal record by ID. |
 | | PUT | Update | Update | Update a specific personal record by ID. |
 | | PATCH | Update | Partial Update | Partially update a specific personal record by ID. |
 | | DELETE | Delete | Delete | Delete a specific personal record by ID. |

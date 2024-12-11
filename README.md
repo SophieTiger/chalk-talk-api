@@ -360,6 +360,23 @@ Replace `app_name` with the name of your primary Django app name; the folder whe
 
 - **Integration:** The PostgreSQL databases provided by CI can be seamlessly integrated with various web frameworks and technologies taught in the course, such as Django. This integration enables students to implement real-world applications with database-driven functionality.
 
+- **To obtain your own PostgreSQL Database:**
+  - Download the PostgreSQL installer from the official website. You can visit the official [PostgreSQL download page](https://www.postgresql.org/download/) to find the appropriate installer for your system-
+  - Run the installer and follow the installation wizard:
+    - Choose components to install (at minimum, PostgreSQL Server and Command Line Tools)
+    - Select installation directory
+    - Set a password for the PostgreSQL superuser (postgres)
+    - Choose the port number (default is 5432)
+    - Select the locale for the database
+  - After installation, you can connect to the database using:
+    - SQL Shell (psql): A command-line tool for executing SQL statements
+    - pgAdmin: A graphical user interface for managing PostgreSQL databases
+  - To create a new database, you can:
+    - Use the CREATE DATABASE SQL command in psql
+    - Use pgAdmin's graphical interface to create a database
+  - Once connected, you can start creating schemas, tables, and working with your database.
+
+
 ### Cloudinary
 - **Purpose:** Media management and storage.
 - **Process:** Cloudinary is used for storing and managing media files, such as images and videos uploaded by users.

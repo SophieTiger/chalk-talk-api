@@ -283,7 +283,8 @@ For all testing and validation, please refer to the [TESTING.md](./TESTING.md) f
 ## Deployment
 The Chalk Talk project leverages a combination of platforms and services to facilitate its development, deployment, and management.
 
-For version control and collaborative development, GitHub is used to host the project repository, enabling efficient code management and team collaboration. GitPod, a cloud-based integrated development environment (IDE), is utilized for coding and testing, providing a consistent and easily accessible development environment.
+For version control and collaborative development, GitHub is used to host the project repository, enabling efficient code management and team collaboration. 
+GitPod, a cloud-based integrated development environment (IDE), is utilized for coding and testing, providing a consistent and easily accessible development environment.
 
 For hosting and running the application, Heroku, a cloud platform as a service (PaaS), is utilized. It enables seamless deployment, automatic scaling, and management tools for monitoring and maintaining the application.
 
@@ -305,6 +306,10 @@ The respective URLs for these platforms and services are as follows:
 - **Process:** 
   - Gitpod is used for development and testing. It provides a cloud-based development environment that is pre-configured with the necessary tools and dependencies.
   - Developers can open the GitHub repository in Gitpod and start coding immediately without worrying about local setup.
+  - Git commands were used throughout the development to push the code to the Github remote repository. The following git commands were used:
+    - git add . - to add the files to the staging area before being committed.
+    - git commit -m "commit message" - to commit changes to the local repository queue that are ready for the final step.
+    - git push - to push all committed code to the remote repository on Github.
 - **URL:** [Gitpod](https://gitpod.io/)
 
 ### Heroku
@@ -417,17 +422,41 @@ In future iterations of this project, it would be beneficial to implement the fo
 The following blogs/tutorials complemented my learning for this project:
 
 - [Django Documentation](https://www.djangoproject.com/)
-- Django REST Framework
-
-Code Institute Moments Walkthrough
-
-Setting up basic Django Project with Cloudinary
+- [Django REST Framework](https://www.django-rest-framework.org/)
+- [Django Rest Framework JWT Documentation](https://jpadilla.github.io/django-rest-framework-jwt/)
+- [Setting up basic Django Project with Cloudinary](https://docs.google.com/document/d/1LCLxWhmW_4VTE4GXsnHgmPUwSPKNT4KyMxSH8agbVqU/edit#heading=h.mpopj7v69qqn)
+- Code Institute Moments Walkthrough project
 
 ### Media
+The following sites were used to gather the photographic media used:
+
+- [Pexels](https://www.pexels.com/)
+- [Freepik](https://www.freepik.com/)
+- Code Institute for the profile placeholder image
+- Chalk Talk Logo was created with [Canva](https://www.canva.com/create/logos/)
 
 ## Acknowledgements
+The development of Chalk Talk has been a very hard but yet exciting journey, and I am grateful for the inspiration, guidance, and resources that have contributed to the project.
+
 ### Inspiration
+The Chalk Talk project draws inspiration from two main sources:
+
+- [CHALK IT PRO](https://www.chalkitpro.com/) and their functionality to add personal scores and percentage count.
+- **Moments**: This is a walkthrough project provided by Code Institute as part of the PP5 Advanced Frontend curriculum. Moments serves as a foundation, offering a social media-like platform structure. It provided the base for features such as user profiles, posts, comments, followers and likes.
+
+By combining the social aspects of Moments with these fitness-specific features I wanted to create a community-centric approach to allow gyms to use this app to their daily business for comprehensive fitness tracking and community engagement with a personal touch.
+
 ### Project Guidance
+Moments DJANGO REST DRF API and Moments REACT Walkthrough Project I utilized the Moments Walkthrough Project as a foundational guide. This project provided valuable insights into structuring the application, implementing various features, and ensuring a seamless user experience. The Moments project had several ideas and functionalities similar to what I envisioned for Chalk Talk, which helped streamline my development process.
+
+### README Structure
+- The structure and format of the README file was inspired by some fellow students projects: [AmirShkolnik](https://github.com/AmirShkolnik/DivingCenter), [raneem-yad](https://github.com/raneem-yad/wissen) and [SwathiKeshavamurthy](https://github.com/SwathiKeshavamurthy/FitandFine-P5) . The detailed and organized presentation of information in their ReadMe served as a great example for documenting Chalk Talk.
+- My own PP4 [Fitness Recipes](https://github.com/SophieTiger/fitness-recipes). This project provided valuable insights into structuring the application, implementing various features, and ensuring a seamless user experience.
+
 ### Personal Thanks
+- Thanks to my Code Institute mentor, Spencer Bariball, for supporting me in times of need and giving invaluable guidance on this challenging journey!
+- Thanks to Kristyna, Cohort facilitator at Code Institute, for always being there to provide all the information needed and for keeping the positive energy up in times of dispare.
+- Thanks to my cohort fellow students for all the wise words and for giving invaluable support on this journey.
+- Thanks to my family for beliving in me when I lack confidence.
 
 [Back to top](#top)

@@ -40,6 +40,7 @@
 - [Acknowledgements](#acknowledgements)
   - [Inspiration](#inspiration)
   - [Project Guidance](#project-guidance)
+  - [README Structure](#readme-structure)
   - [Personal Thanks](#personal-thanks)
 
 

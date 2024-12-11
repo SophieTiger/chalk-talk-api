@@ -174,6 +174,7 @@ The Chalk Talk backend project is organized into several key models, each repres
 
 ## API Endpoints
 The Chalk Talk backend provides a RESTful API to interact with the various models. Below is a list of the primary API endpoints for each model, including their respective HTTP methods and descriptions. It covers all the major functionalities such as user authentication, profiles, posts, comments, likes, followers and personal records.
+
 ![API endpoints image 1](/documentation/api_endpoints_1.png)
 ![API endpoints image 2](/documentation/api_endpoints_2.png)
 
@@ -274,16 +275,96 @@ For all testing and validation, please refer to the [TESTING.md](./TESTING.md) f
 
 ## Bugs
 ### Solved Bugs
-### Known Bugs
-### Unknown Bugs
+- **Bug:** All records were always fetched regardless of the user profile being viewed
+  - **Fix:** Pass the user ID to the PersonalRecordList in the frontend and use it in the API call.
+### Remaining Bugs
+- I am not aware of any remaining bugs.
 
 ## Deployment
-1. GitHub
-2. Gitpod
-3. Heroku
-4. PostGresSQL
-5. Cloudinary
-### Deployment Steps
+The Chalk Talk project leverages a combination of platforms and services to facilitate its development, deployment, and management.
+
+For version control and collaborative development, GitHub is used to host the project repository, enabling efficient code management and team collaboration. GitPod, a cloud-based integrated development environment (IDE), is utilized for coding and testing, providing a consistent and easily accessible development environment.
+
+For hosting and running the application, Heroku, a cloud platform as a service (PaaS), is utilized. It enables seamless deployment, automatic scaling, and management tools for monitoring and maintaining the application.
+
+The Code Institute (CI) database system, which uses PostgreSQL, is employed to store and manage the application's data during development and deployment phases. PostgreSQL is a powerful, open-source object-relational database system that provides robust data management capabilities for the project.
+
+Additionally, Cloudinary, a cloud-based service, is integrated to handle image management, providing an end-to-end solution for storing, optimizing, and delivering media assets for the Chalk Talk platform.
+
+The respective URLs for these platforms and services are as follows:
+
+### GitHub
+- **Purpose:** Version control and collaboration.
+- **Process:** 
+  - The source code for Chalk Talk DRF API is hosted on GitHub. Developers can collaborate, track changes, and manage different versions of the application.
+  - The repository is used as the central hub for the project, where all updates and changes are committed and pushed.
+- **URL:** [GitHub Repository](https://github.com/SophieTiger/chalk-talk-api)
+
+### Gitpod
+- **Purpose:** Online IDE for development.
+- **Process:** 
+  - Gitpod is used for development and testing. It provides a cloud-based development environment that is pre-configured with the necessary tools and dependencies.
+  - Developers can open the GitHub repository in Gitpod and start coding immediately without worrying about local setup.
+- **URL:** [Gitpod](https://gitpod.io/)
+
+### Heroku
+- **Purpose:** Platform as a Service (PaaS) for hosting the application.
+- **Process:** 
+  - The Chalk Talk DRF API application is deployed on Heroku. Heroku manages the server, deployment, and scaling of the application.
+- **URL:** [Heroku Dashboard](https://dashboard.heroku.com/)
+- **Setting up on Heroku:** 
+  - Create a new app on Heroku.
+  - Connect the Heroku app to the GitHub repository.
+  - Set up Config Vars in Heroku including DATABASE_URL, SECRET_KEY, CLOUDINARY_URL, ALLOWED_HOST and DISABLE_COLLECTSTATIC=1 (this is temporary and can be removed for the final deployment).
+  - Deploy the main branch using the Heroku dashboard or enable automatic deployments for every push to the main branch.
+
+**For deployment, Heroku needs two additional files in order to deploy properly:**
+- requirements.txt
+- Procfile
+
+**You can install this project's requirements (where applicable) using:**
+
+- `pip install -r requirements.txt`
+
+**If you have your own packages that have been installed, then the requirements file needs to be updated using:**
+
+- `pip freeze --local > requirements.txt`
+
+**The Procfile can be created with the following command:**
+  
+  - `echo web: gunicorn app_name.wsgi > Procfile` 
+
+**Then add these lines to Procfile**
+
+- `web: gunicorn app_name.wsgi`
+
+- `release: python manage.py makemigrations && python manage.py migrate`
+
+Replace `app_name` with the name of your primary Django app name; the folder where `settings.py` is located.
+
+
+### CI Database
+- **Database Hosting:** The Code Institute (CI) provides PostgreSQL-based database systems specifically for students to use during the development and deployment phases of their projects. PostgreSQL, known for its robustness and reliability, is an advanced, open-source relational database system. It is well-suited for handling complex queries and large volumes of data, making it an excellent choice for web applications.
+
+- **Development Phase:** During development, the CI database allows students to efficiently store, retrieve, and manipulate data required for their applications. It supports various data types and advanced features such as indexing, transactions, and concurrency control, ensuring smooth and effective development processes.
+
+- **Deployment Phase:** When it comes to deployment, the CI database continues to serve as a reliable backend for the application. Students can leverage the database’s capabilities to manage user data, application state, and other critical information with high availability and performance.
+
+- **Accessibility:** The CI database systems are accessible to Code Institute students, providing a consistent and stable environment for learning and project development. This ensures that students have a standardized platform to practice and implement database management techniques, which are crucial skills in the field of web development.
+
+- **Integration:** The PostgreSQL databases provided by CI can be seamlessly integrated with various web frameworks and technologies taught in the course, such as Django. This integration enables students to implement real-world applications with database-driven functionality.
+
+### Cloudinary
+- **Purpose:** Media management and storage.
+- **Process:** Cloudinary is used for storing and managing media files, such as images and videos uploaded by users.
+The application is configured to upload media files directly to Cloudinary, where they are stored and served.
+- **URL:** [Cloudinary Dashboard](https://cloudinary.com/users/login)
+- **Integration:** 
+  - Set up a Cloudinary account.
+  - Configure the Cloudinary settings in the Django settings file with the API keys provided by Cloudinary.
+  - Use Django’s storage backend for Cloudinary to handle media uploads.
+
+## Deployment Steps
 
 ## Cloning and Forking
 ### Cloning the Repository

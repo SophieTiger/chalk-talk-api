@@ -20,7 +20,6 @@
   - [Timeline](#timeline)
 - [Data Models](#data-models)
 - [API Endpoints](#api-endpoints)
-  - [Example Requests and Responses](#example-requests-and-responses)
 - [Frameworks, Libraries, and Dependencies](#frameworks-libraries-and-dependencies)
   - [Django Framework and Extensions](#django-framework-and-extensions)
   - [Database Management](#database-management)
@@ -174,19 +173,101 @@ The Chalk Talk backend project is organized into several key models, each repres
 - notes: TextField
 
 ## API Endpoints
-The Chalk Talk backend provides a RESTful API to interact with the various models. Below is a list of the primary API endpoints for each model, including their respective HTTP methods and descriptions.
+The Chalk Talk backend provides a RESTful API to interact with the various models. Below is a list of the primary API endpoints for each model, including their respective HTTP methods and descriptions. It covers all the major functionalities such as user authentication, profiles, posts, comments, likes, followers and personal records.
 ![API endpoints image 1](/documentation/api_endpoints_1.png)
 ![API endpoints image 2](/documentation/api_endpoints_2.png)
 
-### Example Requests and Responses
-
 ## Frameworks, Libraries, and Dependencies
+The Chalk Talk project leverages a variety of frameworks, libraries, and dependencies to ensure robust functionality and performance. Below is a detailed list of the key components used:
+
 ### Django Framework and Extensions
+- **Django** (Django==4.2):
+
+  - A high-level Python web framework that encourages rapid development and clean, pragmatic design. Django handles much of the complexity of web development.
+
+- **Django REST Framework** (djangorestframework==3.15.2):
+
+  - A powerful and flexible toolkit for building Web APIs in Django. It provides various features such as serialization, authentication, and view sets that simplify API development.
+
+- **Django Allauth** (django-allauth==0.54.0):
+
+  - Integrated set of Django applications addressing authentication, registration and account management.
+
+- **Django REST Auth** (dj-rest-auth==2.1.9):
+
+  - Provides a set of REST API endpoints for handling user registration and authentication tasks. It’s built on top of Django Allauth and Django REST Framework.
+
+- **Django Filter** (django-filter==24.3):
+
+  - Simplifies the process of filtering querysets in Django REST Framework.
+
+- **Django CORS Headers** (django-cors-headers==4.6.0):
+
+  - A Django app for handling the server headers required for Cross-Origin Resource Sharing (CORS).
+
 ### Database Management
+- **dj-database-url** (dj-database-url==0.5.0):
+
+  - Allows you to utilize the DATABASE_URL environment variable to configure your Django application.
+
+- **psycopg2** (psycopg2==2.9.10):
+
+  - PostgreSQL database adapter for Python.
+
 ### Authentication and Security
+- **djangorestframework-simplejwt** (djangorestframework-simplejwt==5.3.1):
+
+  - Provides JSON Web Token (JWT) authentication for Django REST Framework.
+
+- **oauthlib** (oauthlib==3.2.2):
+
+  - A generic, spec-compliant, thorough implementation of the OAuth request-signing logic for Python.
+
+- **requests-oauthlib** (requests-oauthlib==2.0.0):
+
+  - OAuthlib support for Python-Requests, the ubiquitous HTTP library for Python.
+
+- PyJWT (PyJWT==2.9.0):
+
+  - A Python library which allows you to encode and decode JSON Web Tokens (JWT).
+
 ### Storage and Image Handling
+- **pillow** (pillow==11.0.0):
+
+  - Python Imaging Library (PIL) fork that supports opening, manipulating, and saving many different image file formats.
+
+- **Cloudinary** (cloudinary==1.41.0):
+
+  - A library that integrates your application with the Cloudinary service for managing media assets such as images.
+
+- **django-cloudinary-storage** (django-cloudinary-storage==0.3.0):
+
+  - Facilitates the integration of Django with Cloudinary for storing media files.
+
 ### Application Server
+- **Gunicorn** (gunicorn==23.0.0):
+
+  - A Python WSGI HTTP Server for UNIX that serves your Django application and allows it to handle multiple requests simultaneously.
+
 ### Utility Libraries
+- **asgiref** (asgiref==3.8.1):
+
+  - A reference implementation of ASGI, the emerging Python standard for asynchronous web servers and applications.
+
+- **sqlparse** (sqlparse==0.5.1):
+
+  - A non-validating SQL parser for Python.
+
+- **python3-openid** (python3-openid==3.2.0):
+
+  - A set of Python packages to support OpenID authentication.
+
+- **pytz** (pytz==2024.2):
+
+  - World timezone definitions, modern and historical.
+
+This combination of frameworks, libraries, and dependencies ensures that Chalk Talk is robust, scalable, and secure, providing a seamless user experience. 
+
 
 ## Testing and Validation
 For all testing and validation, please refer to the [TESTING.md](./TESTING.md) file.

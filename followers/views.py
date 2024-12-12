@@ -6,8 +6,8 @@ from .serializers import FollowerSerializer
 
 class FollowerList(generics.ListCreateAPIView):
     """
-    List all followers or create a new follower relationship. Authenticated users can create, 
-    while all users can view the list.
+    List all followers or create a new follower relationship.
+    Authenticated users can create, while all users can view the list.
     """
     serializer_class = FollowerSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
@@ -16,10 +16,11 @@ class FollowerList(generics.ListCreateAPIView):
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
 
+
 class FollowerDetail(generics.RetrieveDestroyAPIView):
     """
-    Retrieve or delete a specific follower relationship, allowing owners to modify 
-    while providing read access to others.
+    Retrieve or delete a specific follower relationship, allowing owners
+    to modify while providing read access to others.
     """
     permission_classes = [IsOwnerOrReadOnly]
     serializer_class = FollowerSerializer

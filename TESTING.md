@@ -150,23 +150,21 @@ These tests check if users can access the right information, create and change t
 ### Comments Module Python Validation Results
 | Python File | Results Screenshots | Errors | Warnings |
 |-------------|---------------------|--------|----------|
-| views.py    |                     |        |          |
-| models.py   |                     |        |          |
-| urls.py     |                     |        |          |
-| admin.py    |                     |        |          |
-| apps.py     |                     |        |          |
-| serializers.py |                  |        |          |
+| views.py    |![](./documentation/comments_views.png)                     |0        |0          |
+| models.py   |![](./documentation/comments_models.png)                     |0        |0          |
+| urls.py     |![](./documentation/comments_urls.png)                     |0        |0          |
+| apps.py     |![](./documentation/comments_apps.png)                     |0        |0          |
+| serializers.py |![](./documentation/comments_serializers.png)                  |0        |0          |
 | tests.py    |                     |        |          |
 
 ### Followers Module Python Validation Results
 | Python File | Results Screenshots | Errors | Warnings |
 |-------------|---------------------|--------|----------|
-| views.py    |                     |        |          |
-| models.py   |                     |        |          |
-| urls.py     |                     |        |          |
-| admin.py    |                     |        |          |
-| apps.py     |                     |        |          |
-| serializers.py |                  |        |          |
+| views.py    |![](./documentation/followers_views.png)                     |0        |0          |
+| models.py   |![](./documentation/followers_models.png)                     |0        |0          |
+| urls.py     |![](./documentation/followers_urls.png)                     |0        |0          |
+| apps.py     |![](./documentation/followers_apps.png)                     |0        |0          |
+| serializers.py |![](./documentation/followers_serializers.png)                  |0        |0          |
 | tests.py    |                     |        |          |
 
 ### Likes Module Python Validation Results

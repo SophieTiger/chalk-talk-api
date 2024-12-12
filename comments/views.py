@@ -6,7 +6,7 @@ from .serializers import CommentSerializer, CommentDetailSerializer
 
 
 class CommentList(generics.ListCreateAPIView):
-    """ 
+    """
     List comments or create a comment if logged in
     """
     serializer_class = CommentSerializer
@@ -17,6 +17,7 @@ class CommentList(generics.ListCreateAPIView):
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
+
 
 class CommentDetail(generics.RetrieveUpdateDestroyAPIView):
     """

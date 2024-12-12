@@ -13,7 +13,30 @@ This is the TESTING file for the [Chalk Talk Django Rest Framework API](https://
 Return back to the [README.md](./README.md) file.
 
 ## Table of Contents
-
+- [Manual Testing](#manual-testing)
+  - [Authentication Endpoints](#authentication-endpoints)
+  - [Profiles Endpoints](#profile-endpoints)
+  - [Posts Endpoints](#post-endpoints)
+  - [Comments Endpoints](#comment-endpoints)
+  - [Likes Endpoints](#like-endpoints)
+  - [Followers Endpoints](#follower-endpoints)
+  - [Personal Records Endpoints](#personal-records-endpoints)
+- [Automated Testing](#automated-testing)
+Post API Tests
+Profile Model Tests
+Comment Model Tests
+Followers Model Tests
+Like Model Tests
+Personal Records Model Tests
+Running the Tests
+- [Python Validation](#python-validation)
+  - [Chalk Talk API Project Python Validation Results](#chalk-talk-api-project-python-validation-results)
+  - [Profile Module Python Validation Results](#profile-module-python-validation-results)
+  - [Posts Module Python Validation Results](#posts-module-python-validation-results)
+  - [Comments Module Python Validation Results](#comments-module-python-validation-results)
+  - [Followers Module Python Validation Results](#followers-module-python-validation-results)
+  - [Likes Module Python Validation Results](#likes-module-python-validation-results)
+  - [Personal Records Module Python Validation Results](#personal-records-module-python-validation-results)
 
 ## Manual Testing
 This document outlines the comprehensive testing process for Chalk Talk's backend API, built using Django REST Framework. The main goal of testing is to ensure that all parts of the API work correctly and securely. I've created a set of careful tests for each endpoint.
@@ -88,7 +111,33 @@ These tests check if users can access the right information, create and change t
 ### Running the Tests
 ## Python Validation
 ### chalk-talk-api Project Python Validation Results
+- **Tool Used:** [CI Python Linter](https://pep8ci.herokuapp.com/#)
+- **Purpose:** Analyzes Python source code to identify coding errors, enforce a coding standard, and look for code smells.
+- **Process:** Python code within the Chalk Talk application is analyzed with Pylint to ensure adherence to coding standards and to improve code quality.
+
+**Chalk Talk API Project Python Validation Results:**
+| Python File | Results Screenshots | Errors | Warnings |
+|-------------|---------------------|--------|----------|
+| settings.py    |                     |        |          |
+| manage.py   |                     |        |          |
+| urls.py     |                     |        |          |
+| views.py    |                     |        |          |
+| permissions.py     |                     |        |          |
+| serializers.py |                  |        |          |
+| wsgi.py    |                     |        |          |
+| asgi.py    |                     |        |          |
+
 ### Profile Module Python Validation Results
+| Python File | Results Screenshots | Errors | Warnings |
+|-------------|---------------------|--------|----------|
+| views.py    |                     |        |          |
+| models.py   |                     |        |          |
+| urls.py     |                     |        |          |
+| admin.py    |                     |        |          |
+| apps.py     |                     |        |          |
+| serializers.py |                  |        |          |
+| tests.py    |                     |        |          |
+
 ### Posts Module Python Validation Results
 ### Comments Module Python Validation Results
 ### Followers Module Python Validation Results

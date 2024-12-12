@@ -119,13 +119,12 @@ These tests check if users can access the right information, create and change t
 | Python File | Results Screenshots | Errors | Warnings |
 |-------------|---------------------|--------|----------|
 | settings.py    |![](./documentation/settings_py.png)                     |0        |7          |
-| manage.py   |                     |        |          |
-| urls.py     |                     |        |          |
-| views.py    |                     |        |          |
-| permissions.py     |                     |        |          |
-| serializers.py |                  |        |          |
-| wsgi.py    |                     |        |          |
-| asgi.py    |                     |        |          |
+| urls.py     |![](./documentation/drf_urls_pep8.png)                     |0        |0          |
+| views.py    |![](./documentation/drf_views_pep8.png)                     |0        |0          |
+| permissions.py     |![](./documentation/drf_permissions_pep8.png)                     |0        | 0         |
+| serializers.py |![](./documentation/drf_serializers_pep8.png)                  |0        |0          |
+| wsgi.py    |![](./documentation/drf_wsgi_pep8.png)                     |0        |0          |
+| asgi.py    |![](./documentation/drf_asgi_pep8.png)                     |0        |0          |
 
 ### Profile Module Python Validation Results
 | Python File | Results Screenshots | Errors | Warnings |

@@ -129,6 +129,27 @@ These tests check if users can access the right information, create and change t
 ### Profile Module Python Validation Results
 | Python File | Results Screenshots | Errors | Warnings |
 |-------------|---------------------|--------|----------|
+| views.py    |![](./documentation/profile_views.png)                     |0        |0          |
+| models.py   |![](./documentation/profile_models.png)                     |0        |0          |
+| urls.py     |![](./documentation/profile_urls.png)                     |0        |0          |
+| admin.py    |![](./documentation/profile_admin.png)                     |0        |0          |
+| apps.py     |![](./documentation/profile_apps.png)                     |0        |0          |
+| serializers.py |![](./documentation/profile_serializers.png)                  |0        |0          |
+| tests.py    |                     |        |          |
+
+### Posts Module Python Validation Results
+| Python File | Results Screenshots | Errors | Warnings |
+|-------------|---------------------|--------|----------|
+| views.py    |![](./documentation/post_views.png)                     |0        |0          |
+| models.py   |![](./documentation/post_models.png)                     |0        |0          |
+| urls.py     |![](./documentation/post_urls.png)                     |0        |0          |
+| apps.py     |![](./documentation/post_apps.png)                     |0        |0          |
+| serializers.py |![](./documentation/post_serializer.png)                  |0        |0          |
+| tests.py    |                     |        |          |
+
+### Comments Module Python Validation Results
+| Python File | Results Screenshots | Errors | Warnings |
+|-------------|---------------------|--------|----------|
 | views.py    |                     |        |          |
 | models.py   |                     |        |          |
 | urls.py     |                     |        |          |
@@ -137,11 +158,38 @@ These tests check if users can access the right information, create and change t
 | serializers.py |                  |        |          |
 | tests.py    |                     |        |          |
 
-### Posts Module Python Validation Results
-### Comments Module Python Validation Results
 ### Followers Module Python Validation Results
+| Python File | Results Screenshots | Errors | Warnings |
+|-------------|---------------------|--------|----------|
+| views.py    |                     |        |          |
+| models.py   |                     |        |          |
+| urls.py     |                     |        |          |
+| admin.py    |                     |        |          |
+| apps.py     |                     |        |          |
+| serializers.py |                  |        |          |
+| tests.py    |                     |        |          |
+
 ### Likes Module Python Validation Results
+| Python File | Results Screenshots | Errors | Warnings |
+|-------------|---------------------|--------|----------|
+| views.py    |                     |        |          |
+| models.py   |                     |        |          |
+| urls.py     |                     |        |          |
+| admin.py    |                     |        |          |
+| apps.py     |                     |        |          |
+| serializers.py |                  |        |          |
+| tests.py    |                     |        |          |
+
 ### Personal Records Module Python Validation Results
+| Python File | Results Screenshots | Errors | Warnings |
+|-------------|---------------------|--------|----------|
+| views.py    |                     |        |          |
+| models.py   |                     |        |          |
+| urls.py     |                     |        |          |
+| admin.py    |                     |        |          |
+| apps.py     |                     |        |          |
+| serializers.py |                  |        |          |
+| tests.py    |                     |        |          |
 
 
 [Back to top](#top)

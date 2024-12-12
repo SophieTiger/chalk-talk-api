@@ -34,7 +34,7 @@ class ProfileList(generics.ListAPIView):
 
 
 class ProfileDetail(generics.RetrieveUpdateAPIView):
-    """ 
+    """
     Retrive or update a profile if the logged in user is the owner
     """
     serializer_class = ProfileSerializer
@@ -44,4 +44,3 @@ class ProfileDetail(generics.RetrieveUpdateAPIView):
         followers_count=Count('owner__followed', distinct=True),
         following_count=Count('owner__following', distinct=True)
     ).order_by('-created_at')
-    

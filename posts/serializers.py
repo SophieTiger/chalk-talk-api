@@ -26,7 +26,7 @@ class PostSerializer(serializers.ModelSerializer):
                 'Image height larger than 4096px'
             )
         return value
-    
+
     def get_is_owner(self, obj):
         request = self.context['request']
         return request.user == obj.owner
@@ -40,11 +40,10 @@ class PostSerializer(serializers.ModelSerializer):
             return like.id if like else None
         return None
 
-
     class Meta:
         model = Post
         fields = [
-            'id', 'owner', 'is_owner', 'profile_id', 'profile_image', 'created_at',
-            'updated_at', 'title', 'content', 'image', 'image_filter', 'like_id',
-            'comments_count', 'likes_count',
+            'id', 'owner', 'is_owner', 'profile_id', 'profile_image',
+            'created_at', 'updated_at', 'title', 'content', 'image',
+            'image_filter', 'like_id', 'comments_count', 'likes_count',
         ]

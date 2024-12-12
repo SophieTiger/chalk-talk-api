@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import PersonalRecord
 
+
 class PersonalRecordSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
@@ -11,7 +12,8 @@ class PersonalRecordSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PersonalRecord
-        fields = ['id', 'owner', 'is_owner', 'exercise', 'weight', 'reps', 
-        'date_achieved', 'notes']
+        fields = [
+            'id', 'owner', 'is_owner', 'exercise', 'weight',
+            'reps', 'date_achieved', 'notes'
+            ]
         read_only_fields = ['id', 'owner']
-

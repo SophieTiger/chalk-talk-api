@@ -170,23 +170,21 @@ These tests check if users can access the right information, create and change t
 ### Likes Module Python Validation Results
 | Python File | Results Screenshots | Errors | Warnings |
 |-------------|---------------------|--------|----------|
-| views.py    |                     |        |          |
-| models.py   |                     |        |          |
-| urls.py     |                     |        |          |
-| admin.py    |                     |        |          |
-| apps.py     |                     |        |          |
-| serializers.py |                  |        |          |
+| views.py    |![](./documentation/likes_views.png)                     |0        |0          |
+| models.py   |![](./documentation/likes_models.png)                     |0        |0          |
+| urls.py     |![](./documentation/likes_urls.png)                     |0        |0          |
+| apps.py     |![](./documentation/likes_apps.png)                     |0        |0          |
+| serializers.py |![](./documentation/likes_serializers.png)                  |0        |0          |
 | tests.py    |                     |        |          |
 
 ### Personal Records Module Python Validation Results
 | Python File | Results Screenshots | Errors | Warnings |
 |-------------|---------------------|--------|----------|
-| views.py    |                     |        |          |
-| models.py   |                     |        |          |
-| urls.py     |                     |        |          |
-| admin.py    |                     |        |          |
-| apps.py     |                     |        |          |
-| serializers.py |                  |        |          |
+| views.py    |![](./documentation/pr_views.png)                     |0        |0          |
+| models.py   |![](./documentation/pr_models.png)                     |0        |0          |
+| urls.py     |![](./documentation/pr_urls.png)                     |0        |0          |
+| apps.py     |![](./documentation/pr_apps.png)                     |0        |0          |
+| serializers.py |![](./documentation/pr_serializers.png)                  |0        |0          |
 | tests.py    |                     |        |          |
 
 

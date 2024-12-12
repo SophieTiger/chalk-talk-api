@@ -118,7 +118,7 @@ These tests check if users can access the right information, create and change t
 **Chalk Talk API Project Python Validation Results:**
 | Python File | Results Screenshots | Errors | Warnings |
 |-------------|---------------------|--------|----------|
-| settings.py    |                     |        |          |
+| settings.py    |![](./documentation/settings_py.png)                     |0        |7          |
 | manage.py   |                     |        |          |
 | urls.py     |                     |        |          |
 | views.py    |                     |        |          |

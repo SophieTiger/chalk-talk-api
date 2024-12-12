@@ -115,8 +115,8 @@ if 'CLIENT_ORIGIN' in os.environ:
         os.environ.get('CLIENT_ORIGIN')
     ]
 
-CORS_ALLOWED_ORIGIN_REGEXES = [ r"^https://.*\.codeinstitute-ide\.net$", ]
-  
+CORS_ALLOWED_ORIGIN_REGEXES = [r"^https://.*\.codeinstitute-ide\.net$", ]
+
 CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'chalk_talk_api.urls'
@@ -199,4 +199,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ACCOUNT_EMAIL_VERIFICATION="none"
+ACCOUNT_EMAIL_VERIFICATION = "none"

@@ -102,13 +102,25 @@ These tests check if users can access the right information, create and change t
 | `/personalrecords/<id>/` | DELETE | Delete | Delete a specific personal record by ID | Personal record deleted | Personal record deleted | PASS |
 
 ## Automated Testing
-### Post API Tests
-### Profile Model Tests
-### Comment Model Tests
-### Followers Model Tests
-### Like Model Tests
+This provides an overview of some automated tests implemented for the Chalk Talk project. The tests ensure the reliability and correctness of various functionalities for the personal records app, including user authentication, model validations, and API endpoints.
 ### Personal Records Model Tests
+**File:** `/workspace/CHALK-TALK-API/personalrecords.py/tests.py`
+
+**Description:** Tests for the PersonalRecord model, ensuring that records are created, associated with users, and can be updated, listed and deleted correctly.
+
+**Tests:**
+
+- **test_create_personal_record:** Verifies that a record can be created.
+- **test_update_personal_record:** Ensures a record can be updated.
+- **test_delete_personal_record** Tests that a record can be deleted.
+- **test_list_personal_records:** Tests that records are listed correctly.
+
 ### Running the Tests
+To run the tests, use the following command: `python manage.py test`
+This command will execute all the tests and provide a summary of the results:
+
+![automated tests](./documentation/drf_pr_automated_tests.png)
+
 ## Python Validation
 ### chalk-talk-api Project Python Validation Results
 - **Tool Used:** [CI Python Linter](https://pep8ci.herokuapp.com/#)

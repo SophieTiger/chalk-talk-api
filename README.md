@@ -401,7 +401,7 @@ Replace `app_name` with the name of your primary Django app name; the folder whe
 - **Integration:** The PostgreSQL databases provided by CI can be seamlessly integrated with various web frameworks and technologies taught in the course, such as Django. This integration enables students to implement real-world applications with database-driven functionality.
 
 - **To obtain your own PostgreSQL Database:**
-  - Download the PostgreSQL installer from the official website. You can visit the official [PostgreSQL download page](https://www.postgresql.org/download/) to find the appropriate installer for your system-
+  - Download the PostgreSQL installer from the official website. You can visit the official [PostgreSQL download page](https://www.postgresql.org/download/) to find the appropriate installer for your system
   - Run the installer and follow the installation wizard:
     - Choose components to install (at minimum, PostgreSQL Server and Command Line Tools)
     - Select installation directory
